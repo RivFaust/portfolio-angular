@@ -64,6 +64,7 @@ var peHoverImg = (function(){
             var bgs = bg[i].dataset.bgSrc ? bg[i].dataset.bgSrc : config.bgSrc;
 
             if (bgs !== 'origin') {
+              /
               var img = new Image();
               img.onload = function() {
                 bg[i].style.backgroundImage = "url(" + bgs + ")";
